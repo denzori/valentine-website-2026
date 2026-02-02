@@ -26,13 +26,21 @@ body {
 }
 
 .container {
-    background: rgba(20, 10, 35, 0.85);
+    background: rgba(30, 15, 50, 0.55); /* тёмное стекло */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
     padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+    border-radius: 22px;
     text-align: center;
-    max-width: 600px;
+    max-width: 420px;
     margin: 20px;
+
+    border: 1px solid rgba(180, 120, 255, 0.25);
+    box-shadow:
+        0 0 40px rgba(124, 58, 237, 0.35),
+        inset 0 0 20px rgba(180, 120, 255, 0.15);
+
     overflow: visible !important;
 }
 
@@ -69,11 +77,13 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.45);
 }
 
 .cute-btn:hover {
     transform: scale(1.1);
     background: var(--button-hover);
+    box-shadow: 0 0 30px rgba(159, 103, 255, 0.9);
 }
 
 .hidden {
@@ -261,12 +271,14 @@ h1, h2 {
 }
 
 h1 {
-    color: #ff6b6b;
+    color: var(--text-color);
     margin-bottom: 2rem;
+    text-shadow: 0 0 18px rgba(180, 120, 255, 0.7);
 }
 
 h2 {
-    color: #ff8787;
+    color: var(--text-color);
+    text-shadow: 0 0 18px rgba(180, 120, 255, 0.7);
 }
 
 .super-love {
