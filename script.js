@@ -273,3 +273,16 @@ window.addEventListener('DOMContentLoaded', () => {
         moveButton(noBtn3);
     });
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const musicControls = document.getElementById('musicControls');
+    const secretAnswer = document.querySelector('.secret-answer');
+
+    if (musicControls) {
+        document.body.appendChild(musicControls);
+    }
+
+    if (secretAnswer) {
+        document.body.appendChild(secretAnswer);
+    }
+});
