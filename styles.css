@@ -103,7 +103,6 @@ body {
     margin-top: 0;
     opacity: 0.2;
     transition: opacity 0.3s;
-    transform: scale(0.7);
     z-index: 9999;
     animation: subtle-hint 2s infinite alternate;
     animation-delay: 5s;
@@ -112,6 +111,7 @@ body {
 .secret-answer .cute-btn {
     font-size: 0.8rem;
     padding: 5px 10px;
+    transform: scale(0.7);
 }
 
 .secret-answer:hover {
@@ -232,7 +232,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.love-value-{
+.love-value-container {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -309,7 +309,7 @@ h2 {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .music-btn {
