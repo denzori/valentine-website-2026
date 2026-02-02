@@ -240,3 +240,36 @@ function setupMusicPlayer() {
         }
     });
 } 
+
+window.addEventListener('DOMContentLoaded', () => {
+    const yesBtn1 = document.getElementById('yesBtn1');
+    const noBtn1 = document.getElementById('noBtn1');
+
+    const nextBtn = document.getElementById('nextBtn');
+
+    const yesBtn3 = document.getElementById('yesBtn3');
+    const noBtn3 = document.getElementById('noBtn3');
+
+    // Вопрос 1
+    yesBtn1.addEventListener('click', () => {
+        showNextQuestion(2);
+    });
+
+    noBtn1.addEventListener('mouseenter', () => {
+        moveButton(noBtn1);
+    });
+
+    // Вопрос 2
+    nextBtn.addEventListener('click', () => {
+        showNextQuestion(3);
+    });
+
+    // Вопрос 3
+    yesBtn3.addEventListener('click', () => {
+        celebrate();
+    });
+
+    noBtn3.addEventListener('mouseenter', () => {
+        moveButton(noBtn3);
+    });
+});
